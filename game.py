@@ -12,5 +12,4 @@ while tryout != pick:
     tryout_str=raw_input("Your guess?")
     tryout=int(tryout_str)
     
-if tryout == pick:
-        print "well done! What a brain!"
+print "well done! What a brain!"
