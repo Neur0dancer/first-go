@@ -1,10 +1,16 @@
 from random import randint
+import sys
 
 rules=raw_input("Do you want to know the rules?(y/n)")
 explanation=rules.lower()
 if explanation=="y":
     print "I will pick a number between 1 and 100 (included)."
     print "Your job is to find it."
+elif explanation!="y" and explanation != "n" :
+    print "Y for yes, N for no!"
+    print "What's so difficult about that?"
+    print "Go back to school dumbass!"
+    sys.exit()
 
 pick = randint(1, 100)
 
