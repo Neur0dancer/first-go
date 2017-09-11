@@ -12,3 +12,4 @@ while tryout != pick:
     count+=1
 
 print "well done! What a brain!"
+print count
