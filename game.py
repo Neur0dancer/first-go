@@ -1,11 +1,11 @@
 from random import randint
 
 rules=raw_input("Do you want to know the rules?(y/n)")
-rules.lower()
-if rules==y:
+explanation=rules.lower()
+if explanation=="y":
     print "I will pick a number between 1 and 100 (included)."
     print "Your job is to find it."
-    
+
 pick = randint(1, 100)
 
 tryout_str=raw_input("Your guess?")
@@ -20,3 +20,4 @@ while tryout != pick:
     tryout=int(tryout_str)
     
 print "well done! What a brain!"
+
