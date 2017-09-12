@@ -9,7 +9,7 @@ if explanation=="y":
 elif explanation!="y" and explanation != "n" :
     print "Y for yes, N for no!"
     print "What's so difficult about that?"
-    print "Go back to school dumbass!"
+    print "Go back to school, DUMBASS!"
     sys.exit()
 
 pick = randint(1, 100)
