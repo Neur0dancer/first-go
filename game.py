@@ -18,13 +18,18 @@ tryout_str=raw_input("Your guess?")
 tryout=int(tryout_str)
 
 while tryout != pick:
-    if tryout > pick:
+    if tryout<1 or tryout>100:
+        print "Between 1 and 100"
+        print "learn to count and come back, JERK!"
+        sys.exit()
+    elif tryout > pick:
         print "Your guess is too high."
     elif tryout < pick:
         print "Your guess is too low."
     tryout_str=raw_input("Your guess?")
     tryout=int(tryout_str)
     count+=1
+
 
 print "well done! What a brain!"
 
