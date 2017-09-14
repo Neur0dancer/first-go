@@ -1,4 +1,17 @@
 from random import randint
+import sys
+
+rules=raw_input("Do you want to know the rules?(y/n)")
+explanation=rules.lower()
+if explanation=="y":
+    print "I will pick a number between 1 and 100 (included)."
+    print "Your job is to find it."
+elif explanation!="y" and explanation != "n" :
+    print "Y for yes, N for no!"
+    print "What's so difficult about that?"
+    print "Go back to school, DUMBASS!"
+    sys.exit()
+
 pick = randint(1, 100)
 
 tryout_str=raw_input("Your guess?")
@@ -13,3 +26,4 @@ while tryout != pick:
     tryout=int(tryout_str)
     
 print "well done! What a brain!"
+
